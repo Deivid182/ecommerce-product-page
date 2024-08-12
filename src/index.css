@@ -19,11 +19,11 @@
   }
 
   .padding-x {
-    @apply sm:px-32 px-16;
+    @apply sm:px-32 px-4;
   }
 
   .padding-y {
-    @apply sm:py-24 py-12;
+    @apply sm:py-24 py-6;
   }
 
   .padding-l {

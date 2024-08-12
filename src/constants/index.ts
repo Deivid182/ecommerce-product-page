@@ -16,3 +16,11 @@ export const shoes = [
     bigShoe: "/img/image-product-4.jpg"
   },
 ]
+
+export const navLinks = [
+  { href: "/#collections", label: "Collections" },
+  { href: "/#men", label: "Men" },
+  { href: "/#woman", label: "Women" },
+  { href: "/#about", label: "about" },
+  { href: "/#contact", label: "Contact" },
+];

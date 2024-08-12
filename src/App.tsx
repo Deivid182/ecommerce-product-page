@@ -7,8 +7,8 @@ function App() {
   return (
     <>
       <Header/>
-      <main className="padding-x padding-y">
-        <div className="max-container px-8 flex gap-32 items-center">
+      <main className="lg:px-32 padding-y">
+        <div className="max-container lg:px-8 flex flex-col lg:flex-row gap-8 lg:gap-24 items-center">
           <Gallery />
           <Content />
         </div>
