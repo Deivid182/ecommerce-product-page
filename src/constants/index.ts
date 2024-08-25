@@ -21,6 +21,6 @@ export const navLinks = [
   { href: "/#collections", label: "Collections" },
   { href: "/#men", label: "Men" },
   { href: "/#woman", label: "Women" },
-  { href: "/#about", label: "about" },
+  { href: "/#about", label: "About" },
   { href: "/#contact", label: "Contact" },
 ];

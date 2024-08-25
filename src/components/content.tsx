@@ -84,7 +84,9 @@ const Content = () => {
               fill-rule="nonzero"
             />
           </svg>
-          <p className="font-medium text-lg text-very-dark-blue">Add to cart</p>
+          <p className="font-medium text-lg text-very-dark-blue">
+            {isInCart ? "In Cart" : "Add to Cart"}
+          </p>
         </button>
       </article>
     </section>
