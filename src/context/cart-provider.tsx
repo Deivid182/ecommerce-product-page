@@ -5,6 +5,7 @@ type CartContextType = {
   state: CartStateType;
   dispatch: React.Dispatch<CartActionsType>;
   totalPrice: number
+  noEmpty: boolean
 }
 
 export const CartContext = createContext<CartContextType>({} as CartContextType);
@@ -17,10 +18,13 @@ export const CartProvider = ({ children }: { children: React.ReactNode}) => {
     return state.items.reduce((acc, item) => acc + (item.price * item.qty), 0)
   }, [state.items])
 
+
+  const noEmpty = useMemo(() => !!state.items.length, [state.items.length])
+
   return (
     <CartContext.Provider
       value={{
-        state, dispatch, totalPrice
+        state, dispatch, totalPrice, noEmpty
       }}
     >
       {children}
