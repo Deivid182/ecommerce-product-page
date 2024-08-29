@@ -50,15 +50,16 @@
 .header {
   position: sticky;
   top: 0px;
-  animation: adjust-header linear both;
+  animation: adjust-header 1s linear both;
   animation-timeline: scroll();
-  animation-range: 0 50px;
+  animation-range: 0 100px;
 }
 
 @keyframes adjust-header {
+  0% {
+    @apply dark:bg-gray-800/0 bg-white/0;
+  }
   to {
-    background: rgba(255, 255, 255, 0.479);
-    backdrop-filter: blur(5px);
-    font-size: 14px;
+    @apply shadow-lg ring-1 backdrop-blur ring-white/10;
   }
 }

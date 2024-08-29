@@ -25,7 +25,7 @@ export const cartReducer = (state: CartStateType = initialCartState, action: Car
     let updatedCart: CartItem[] = []
 
     if(foundItem) {
-      updatedCart = state.items.map(item => item.id === foundItem.id ? {...foundItem, qty: foundItem.qty + 1 } : item )
+      updatedCart = state.items.filter(item => item.id!== action.payload.item.id)
     } else {
       updatedCart = [...state.items, { ...action.payload.item, qty: 1}]
     }

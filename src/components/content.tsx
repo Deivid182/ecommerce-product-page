@@ -85,7 +85,7 @@ const Content = () => {
             />
           </svg>
           <p className="font-medium text-lg text-very-dark-blue">
-            {isInCart ? "In Cart" : "Add to Cart"}
+            {isInCart ? "Remove from the cart" : "Add to Cart"}
           </p>
         </button>
       </article>

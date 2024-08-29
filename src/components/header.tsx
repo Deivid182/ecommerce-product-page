@@ -60,6 +60,9 @@ const Header = () => {
                           Product name
                         </th>
                         <th scope="col" className="px-6 py-3">
+                          Number of items
+                        </th>
+                        <th scope="col" className="px-6 py-3">
                           Price
                         </th>
                         <th scope="col" className="px-6 py-3">
@@ -79,6 +82,12 @@ const Header = () => {
                               className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
                             >
                               {item.name}
+                            </th>
+                            <th
+                              scope="row"
+                              className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                            >
+                              {item.qty}
                             </th>
                             <td className="px-6 py-4">
                               {new Intl.NumberFormat("en", {
@@ -119,7 +128,7 @@ const Header = () => {
                       )}
                     </tbody>
                   </table>
-                  <p className="z-20 flex justify-end text-gray-500 p-2">
+                  <p className="z-20 bg-white flex justify-end text-gray-500 p-2">
                     Total:
                     <span className="ml-1 font-black">
                       {new Intl.NumberFormat("en", {
